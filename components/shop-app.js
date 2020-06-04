@@ -11,9 +11,11 @@ class shopApp extends HTMLElement {
     }
     getTemplate() {
         return `
-            <h2>Hola desde my app</h2>
-            <p>soy más texto ejemplo del componente</p>
-
+            <div class="App">
+                <div class="Shop-container">
+                    
+                </div>
+            </div>
             ${this.getStyles()}
         `; 
     }
@@ -41,6 +43,18 @@ class shopApp extends HTMLElement {
                     color: var(--my-app-color, red);
                     font-size: var(--my-app-font-size, 16px);
                 }
+
+                @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+                *{
+                    box-sizing: border-box;
+                }
+                body{
+                    margin: 0;
+                    padding: 0;
+                    font-family: 'lato', sans-serif;
+                    min-height: 100%;
+                }
+                
             </style>
         `; 
     }
